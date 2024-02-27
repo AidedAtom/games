@@ -8,7 +8,7 @@
 using namespace std;
 
 string name = " ";
-
+bool L = 0;
 int blank = 0;
 int live = 0;
 int ammo();
@@ -55,6 +55,7 @@ if(urturn==1){
     break;
     }else if(health == 0){
     SetConsoleTextAttribute(hConsole, 4); cout<<"You lost! skill issue tbh"<<endl;
+    L = 1;
     over = 1;
     break;
 }
@@ -66,6 +67,7 @@ if(urturn==1){
     break;
     }else if(health == 0){
     SetConsoleTextAttribute(hConsole, 4); cout<<"You lost! skill issue tbh"<<endl;
+    L = 1;
     over = 1;
     break;
 }
@@ -90,6 +92,7 @@ if(urturn==1){
     break;
 }else if(health == 0){
     SetConsoleTextAttribute(hConsole, 4); cout<<"You lost! skill issue tbh"<<endl;
+    L = 1;
     over = 1;
     break;
 }
@@ -101,12 +104,15 @@ if(urturn==1){
     break;
 }else if(health == 0){
     SetConsoleTextAttribute(hConsole, 4); cout<<"You lost! skill issue tbh"<<endl;
+    L=1;
     over = 1;
     break;
 }
 }
 }
 }
+
+if(L==0){
 SetConsoleTextAttribute(hConsole, 12);
 cout<<"Dealer: You really think you can defeat me huh.... Well let me tell you something"<<endl;
 Sleep(5000);
@@ -122,13 +128,17 @@ SetConsoleTextAttribute(hConsole, 10);
 Sleep(3000);
 cout<<"AidedAtom: Don't worry about him... You did good bud, next time you will kill him for good"<<endl<<endl;
 Sleep(3000);
+}else{
+    cout<<"you're dead and all you see is..."<<endl;
+    cout<<"gegagedigedagedao"<<endl;
+}
 
 
  SetConsoleTextAttribute(hConsole, 2);
  cout<<"Credits: "<<endl;
  cout<<"Game created by: AidedAtom"<<endl;
  Sleep(100);
- cout<<"Bug testers: Halflander"<<endl;
+ cout<<"Bug testers: Halflander, gaybi"<<endl;
  Sleep(100);
  cout<<"original game by: Mike Klubinka"<<endl;
 string gg;
