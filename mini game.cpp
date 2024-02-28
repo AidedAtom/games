@@ -8,7 +8,7 @@ int n;
 int lih = 0;
 
 void prime(bool tof, int n){
-    tof == false;
+    tof = false;
     if(n!=1){
         for(int i = 2; i<n && tof != true; i++){
             if(n%i==0){
@@ -41,6 +41,9 @@ if(j==3){
     break;
 }
 cin>>n;
+if(n/10 == n && n!=0){
+    cout<<"bro thats not even a number like tf?"<<endl;
+}else{
 prime(tof, n);
 
 if(lih == 42){
@@ -51,6 +54,7 @@ if(wol == true){
     cout<<"Do you not know what a prime number is? Go google it or smthn...(Yes, you did lose)";
 }else{
     cout<<"GG you won!";
+}
 }
 usleep(10000000);
 cout<<endl<<endl<<endl;
