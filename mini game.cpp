@@ -1,4 +1,5 @@
 ///prime number thingy
+///if you enter in something thats not a number it will say its a prime number sooo big L on my side
 #include<iostream>
 #include <unistd.h>
 using namespace std;
@@ -41,15 +42,12 @@ if(j==3){
     break;
 }
 cin>>n;
-if(n/10 == n && n!=0){
-    cout<<"bro thats not even a number like tf?"<<endl;
-}else{
 prime(tof, n);
 
 if(lih == 42){
     break;
 }
-}
+
 if(wol == true){
     cout<<"Do you not know what a prime number is? Go google it or smthn...(Yes, you did lose)";
 }else{
