@@ -1,5 +1,6 @@
-Theese are my games, here's how good i think they are(not that any1 asked):
-  - buckshot.cpp - best project ive ever made. its most of the reason i made this github profile in the first place
-  - testurluck.cpp - fun little project. probably worth playing once or twice its kinda fun ig but def not my greatest project
-  - mini game.cpp - complete garbage, only posted it cuz its the first game ive ever made
+How to download:
+ - click on the file you want to download
+ - in the top left click on the download icon that says "download raw" when u hover over it
+ - click on the top right of chrome where the file pops up to open it
+ - ur antivirus will hate it so if you dont trust me to back to main take the code and run it through visualstudio or codeblocks or smthn
   
