@@ -1,5 +1,4 @@
 #include<iostream>
-
 #include<cmath>
 #include<windows.h>
 #include<time.h>
@@ -121,7 +120,7 @@ Sleep(3000);
 cout<<"Dealer: I have defeated the holy and almighty BOB"<<endl;
 Sleep(4000);
 cout<<"Dealer: Until we meet again, punk *spits in ur face and walks away*"<<endl<<endl;
-Sleep(5000);
+Sleep(3000);
 SetConsoleTextAttribute(hConsole, 11);
 cout<<name<<": The fuck is up with that guy?"<<endl<<endl;
 SetConsoleTextAttribute(hConsole, 10);
