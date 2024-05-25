@@ -11,7 +11,11 @@ int main(){
 HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 srand(time(NULL));
 double bal = 1.0;
-for(int i = 0; i<1000; i++){
+cout<<"Enter in a number(between 1 and 32,767)"<<endl;
+short amogus;
+cin>>amogus;
+while(1){
+for(int i = 0; i<amogus; i++){
 int x = rand()%10000;
     if(x==1){
         SetConsoleTextAttribute(hConsole, 4);
@@ -41,7 +45,7 @@ int x = rand()%10000;
         bal+=2;
     }
 }
-    SetConsoleTextAttribute(hConsole, 15);
+SetConsoleTextAttribute(hConsole, 15);
     cout<<endl<<"Your balance is:"<<endl;
     if(bal<1000000){
     cout<<bal/1000.0<<"k";
@@ -50,9 +54,8 @@ int x = rand()%10000;
     }else{
     cout<<bal/1000000000.0<<"B";
     }
-    SetConsoleTextAttribute(hConsole, 0);
-    cout<<endl;
-    int amogus;
+    cout<<endl<<endl;
     cin>>amogus;
+}
     return 0;
 }
