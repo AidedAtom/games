@@ -11,7 +11,7 @@ int main(){
 HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 srand(time(NULL));
 double bal = 1.0;
-cout<<"Enter in a number(between 1 and 32,767)"<<endl;
+cout<<"Enter in a whole number(between 1 and 32,767)"<<endl;
 short amogus;
 cin>>amogus;
 while(1){
