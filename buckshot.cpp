@@ -129,7 +129,8 @@ cout<<"AidedAtom: Don't worry about him... You did good bud, next time you will 
 Sleep(3000);
 }else{
     cout<<"you're dead and all you see is..."<<endl;
-    cout<<"gegagedigedagedao"<<endl;
+    Sleep(2500);
+    cout<<"gegagedigedagedao"<<endl<<endl;
 }
 
 
