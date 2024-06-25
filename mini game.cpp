@@ -4,12 +4,10 @@
 #include <unistd.h>
 using namespace std;
 
-bool tof;
 int n;
-int lih = 0;
 
-void prime(bool tof, int n){
-    tof = false;
+bool prime(int n){
+    bool tof = false;
     if(n!=1){
         for(int i = 2; i<n && tof != true; i++){
             if(n%i==0){
@@ -18,45 +16,37 @@ void prime(bool tof, int n){
         }
         if(tof==false){
             cout<<"Mhm... that looks like a prime number to me..."<<endl;
+            return true;
         }else{
             cout<<"Thats not a prime number stupid..."<<endl;
+            return false;
         }
     }
     else{
-        tof = true;
+        return false;
         cout<<"Acctually no, 1 is not a prime number."<<endl;
-    }
-    if(tof==false){
-        lih = 42;
     }
 }
 
 
 int main(){
 cout<<"Enter in a prime number! You have 3 tries."<<endl;
-bool wol = false;
 
-for(int j = 0; j<4; j++){
-if(j==3){
-    wol = true;
-    break;
-}
+for(int j = 0; j<3; j++){
 cin>>n;
-prime(tof, n);
-
-if(lih == 42){
-    break;
-}
-
-if(wol == true){
-    cout<<"Do you not know what a prime number is? Go google it or smthn...(Yes, you did lose)";
+if(prime(n); = true){
+    cout<<"you win ig";
+    usleep(1000)
+    return 0;
 }else{
-    cout<<"GG you won!";
+    cout<<"try again bro"<<endl;
 }
 }
+
+cout<<"skill issue bro";
 usleep(10000000);
 cout<<endl<<endl<<endl;
 
     return 0;
 }
-///this was such a pain....
+///shitty code lol
